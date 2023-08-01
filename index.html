@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bana Lo Password</title>
+    <script src="https://kit.fontawesome.com/edd4e6a249.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="head">
+      <h3>Random Password Generator</h3>
+    </div>
+    <div class="section">
+        <div class="copied">
+          <div class="div text">
+            <span id='pass-box' class="overflow">Password</span>
+          </div>
+          <button onclick="copyTextFromElement('pass-box')" class="copy-text color-change"><i class="fa-solid fa-clipboard"></i></button>
+        </div>
+        <div class="div size">
+          <label>Size of password</label>
+          <input id='size' type="number" />
+        </div>
+        <div class="div capital">
+          <label>Contains Uppercase</label>
+          <input id='capital' type="checkbox" />
+        </div>
+        <div class="div small">
+          <label>Contains Lowercase</label>
+          <input id='small' type="checkbox" />
+        </div>
+        <div class="div number">
+          <label>Contains Numbers</label>
+          <input id='numbers' type="checkbox" />
+        </div>
+        <div class="div symbol">
+          <label>Contains Symbols</label>
+          <input id='symbols' type="checkbox" />
+        </div>
+        <div class="div btn">
+          <button id="btn">Create Password</button>
+        </div>
+    </div>
+  </div>
+    
+</body>
+<script src="./app.js"></script>
+</html>
